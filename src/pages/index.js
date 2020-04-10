@@ -68,8 +68,10 @@ const Index = () => {
         <iframe sx={{ 
           position: 'absolute', 
           top: 0,
+          left: [0, 'auto', 'auto'],
           width: ['100%', '40em', "40em"],
-          paddingTop: '70px',
+          pt: ['40px', '70px', '70px'],
+          px: ['5px', '0px', '0px'],
           margin: '0 auto',
           height: '100%',
           border: 'none'
