@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import React from "react"
 import Layout from "../components/layout"
-import useScript from '../components/survey'
 import { jsx, Heading, Box, Text, Grid, Link, Button } from "theme-ui"
 import { Link as GatsbyLink } from "gatsby"
 import { useState } from "react"
@@ -14,8 +13,6 @@ const Index = () => {
   const start = (e) => {
     setStarted(true)
   }
-
-  // useScript('https://widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd27QsLi_2FI20a_2BLLKKMWwHzNB8K8U1JAXQWx017fPEt3A.js')
 
   return (
     <Layout>
@@ -71,7 +68,7 @@ const Index = () => {
         <iframe sx={{ 
           position: 'absolute', 
           top: 0,
-          width: "40em",
+          width: ['100%', '40em', "40em"],
           paddingTop: '70px',
           margin: '0 auto',
           height: '100%',
