@@ -37,7 +37,7 @@ class Header extends Component {
         }}
       >
         <Box sx={{zIndex: 1000}}>
-          <GatsbyLink><Image src={logo} sx={{width: 40, verticalAlign: "text-top", marginTop: "-10px", marginRight: "10px"}}></Image></GatsbyLink>
+          <GatsbyLink to="/"><Image src={logo} sx={{width: 40, verticalAlign: "text-top", marginTop: "-10px", marginRight: "10px"}}></Image></GatsbyLink>
           <GatsbyLink sx={{variant: "links.nav"}} to="/">NextTrace</GatsbyLink>
         </Box>
       </Flex>

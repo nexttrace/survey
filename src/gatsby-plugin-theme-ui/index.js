@@ -23,6 +23,38 @@ export default {
     secondary: "#f3d160",
     muted: "#fbaf86",
   },
+  text: {
+    input: {
+      fontFamily: 'monospace',
+      fontSize: [1],
+      mx: [2],
+      pb: [1],
+      borderBottomWidth: '2px',
+      borderBottomStyle: 'dotted',
+      borderBottomColor: 'text',
+    }
+  },
+  buttons: {
+    primary: {
+      color: 'background',
+      position: 'relative',
+      bg: 'primary',
+      fontWeight: 'bold',
+      cursor: 'pointer',
+      '&:hover': {
+        color: 'background',
+        bg: 'primary',
+        transform: 'scale(1.05)',
+      },
+      '&:focus': {
+        transform: 'scale(1.05)',
+        outline: 'none'
+      },
+      '&:active': {
+        top: '2px',
+      }
+    }
+  },
   links: {
     nav: {
       color: "inherit",
@@ -36,6 +68,31 @@ export default {
       fontSize: [2],
       fontWeight: "bold",
       cursor: "pointer"
+    }
+  },
+  forms: {
+    input: {
+      fontSize: [1],
+      fontFamily: 'monospace',
+      padding: [2],
+      pl: [0],
+      mb: [3],
+      borderRadius: '0px',
+      maxWidth: '500px',
+      border: 'none',
+      borderBottomWidth: '2px',
+      borderBottomStyle: 'solid',
+      borderBottomColor: 'text',
+      '&:focus': {
+        borderColor: 'primary',
+        outline: 'none'
+      }
+    },
+    radio: {
+      cursor: 'pointer'
+    },
+    label: {
+      cursor: 'pointer'
     }
   },
   styles: {

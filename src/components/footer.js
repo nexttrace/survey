@@ -11,6 +11,7 @@ const Footer = () => {
         maxWidth: 960
       }}
     >
+    © NextTrace 2020 - Present / Disclaimer about security / Disclaimer about privacy
     </Box>
   )
 }
