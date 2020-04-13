@@ -8,7 +8,8 @@ const Footer = () => {
       sx={{
         m: `0 auto`,
         p: `1.45rem 1.0875rem`,
-        maxWidth: 960
+        maxWidth: 960,
+        display: ['none', 'inherit', 'inherit']
       }}
     >
     © NextTrace 2020 - Present / Disclaimer about security / Disclaimer about privacy

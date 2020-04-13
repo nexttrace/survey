@@ -14,12 +14,13 @@ const FormStack = () => {
           top: 0,
           left: [0, 'auto', 'auto'],
           width: ['100%', '40em', "40em"],
-          pt: ['50px', '70px', '70px'],
+          pt: ['0px', '70px', '70px'],
           px: ['5px', '0px', '0px'],
           margin: '0 auto',
           ml: ['0px', '-20px', '-20px'],
           height: '100%',
-          border: 'none'
+          border: 'none',
+          zIndex: [1000, 0, 0]
         }} src="https://nexttrace.formstack.com/forms/test_v0"></iframe>
       </Box>
     </Layout>
