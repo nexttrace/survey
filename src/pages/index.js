@@ -17,7 +17,7 @@ const Index = () => {
         We are preventing the spread of COVID-19 by finding people who might
         be infected and getting them to test and stay at home. We need your help.
       </Heading>
-      <GatsbyLink to='/survey'><Button sx={{ mt: [4] }}>begin the survey</Button></GatsbyLink>
+      <GatsbyLink to='/formstack'><Button sx={{ mt: [4] }}>begin the survey</Button></GatsbyLink>
       <Box sx={{ maxWidth: "40em", my: [4, null, 5] }}>
         <Heading as='h3' sx={{ my: [4], fontSize: [3] }}>
           What this is for
@@ -58,7 +58,7 @@ const Index = () => {
         answers impacts how well this works. We kindly ask that you be as accurate
         as possible with your answers. 
        </Text>
-       <GatsbyLink to='/survey'><Button sx={{ mt: [4] }}>begin the survey</Button></GatsbyLink>
+       <GatsbyLink to='/formstack'><Button sx={{ mt: [4] }}>begin the survey</Button></GatsbyLink>
       </Box>
     </Layout>
   )

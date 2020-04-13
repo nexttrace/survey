@@ -12,6 +12,7 @@ const Survey = () => {
   const [residence, setResidence] = useState(false)
 
   const handleChange = (date) => {
+    console.log(date)
     setDate(date)
   }
 
@@ -40,11 +41,12 @@ const Survey = () => {
         <Text sx={{ mb:[2] }}>
           Please enter the first day you started to feel symptoms.
         </Text>
-        <DatePicker sx={{variant: 'forms.input'}} selected={date} onChange={handleChange} />
+
+        <input value={date} onChange={setDate} type='date'></input>
         <Text sx={{ mb:[2] }}>
           For the questions that follow, we will be asking you about your 
           activities and people you have had contact with between{' '}
-          <span sx={{variant: 'text.input'}}>{date.toDateString()}</span>{' '}
+          <span sx={{variant: 'text.input'}}></span>{' '}
           and <span sx={{variant: 'text.input'}}>{(new Date()).toDateString()}</span>
         </Text>
         <Heading as="h3" sx={{ fontSize: [4], lineHeight: "body", mt: [3, null, 4], mb: [2, null, 3] }}>
@@ -53,7 +55,7 @@ const Survey = () => {
         <Text sx={{ mb:[2] }}>
           We will now ask you about the people you live with, 
           and anyone who may have come to your home
-          between{' '}<span sx={{variant: 'text.input'}}>{date.toDateString()}</span>{' '}
+          between{' '}<span sx={{variant: 'text.input'}}></span>{' '}
           and <span sx={{variant: 'text.input'}}>{(new Date()).toDateString()}</span>
         </Text>
         <Box sx={{mt: [3], mb: [2], backgroundColor: "secondary", width: "10px", height: "10px", borderRadius: "10px"}}></Box>
